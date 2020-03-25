@@ -11,7 +11,7 @@ class Pelota{
  }
   
   void edges() {
-  if (y < 10 || y > height-10)
+  if (y < 10 || y > height-15)
     yspeed *= -1;
   if (x < 10 || x > width-10)
     xspeed *= -1;
