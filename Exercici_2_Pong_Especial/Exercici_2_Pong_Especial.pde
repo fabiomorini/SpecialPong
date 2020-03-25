@@ -17,12 +17,20 @@ void draw(){
   background(0);
   stroke(255);
   rect(5, mouseY, 20,40);
+  rect(width-30, mouseX, 20,40);
   pelota.show();
   pelota.update();
   pelota.edges();
   addScore();
   drawScore();
+  winGame();
 }
+
+  void winGame(){
+    if(player1.score == 10 || player2.score == 10){
+      exit();
+    }
+  }
 
   void drawScore(){
     textSize(32);
